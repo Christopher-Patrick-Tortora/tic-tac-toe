@@ -1,0 +1,153 @@
+body{
+    background-color: black;
+    
+}
+
+header{
+    color: red;
+    font-family: 'arcade-Font' , Fallback, sans-serif;
+    font-size: 100px;
+    text-align: center;
+   
+}
+form{
+    text-align: center;
+    display: block;
+    position: relative;
+    color: white;
+    margin: auto;
+    transform: translate(15%, 15%);
+    width: 400px;
+   
+   
+}
+label{
+    display: block
+}
+input{
+    display: block;
+}
+
+#board{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    display: none;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    width: 550px;
+    height: 550px;
+   
+}
+
+.square{
+    background-color: blue;
+    border-style: solid;
+    border-color:  white;
+    transition: border-width 0.0s linear;  
+
+}
+
+.square:hover{
+    filter:brightness(70%)
+}
+
+.x{
+    font-size: 75px; 
+    color: cyan;
+    text-align: center;
+}
+
+.playerOne{
+    color: cyan;
+    margin: 10px;
+    text-align: left;
+    background-color: black;
+    
+}
+
+.x::after{
+    content:' \2715'; /* use the hex value here... */
+    position: relative;
+    top: 25%;
+
+}
+
+.x:hover { 
+    border-color:  darkred;
+    filter:brightness(100%)
+    
+                     
+}
+
+
+.o{
+    font-size: 75px; 
+    color: magenta;
+    text-align: center;
+}
+
+.playerTwo{
+    color: magenta;
+    margin: 10px;
+    text-align: left;
+    background-color: black;
+}
+
+.o::after{
+     content: " \25EF"; /* use the hex value here... */
+    font-weight: bolder;
+    position: relative;
+    top: 20%;
+}
+
+
+      
+.o:hover { 
+    border-color:  darkred;
+    filter:brightness(100%)
+                     
+}
+
+@font-face {
+    font-family: 'arcade-Font';
+    src: url('arcade_[allfont.net].ttf');
+  }
+
+  @font-face {
+    font-family: 'arcade-Font2';
+    src: url('ARCADECLASSIC.TTF');
+  }
+
+  #playerOneButtons{
+      display: inline;
+
+  }
+
+  #start{
+      position: absolute;
+      left: 20%;
+  }
+  #winner{
+    font-family: 'arcade-Font2' , Fallback, sans-serif;
+      position: absolute;
+      color: aliceblue;
+      margin: auto;
+      width: 100%;
+      font-size: 35px;
+      top: 15%;
+      text-align: center;
+  }
+
+ #restart{
+position: absolute;
+top: 70%;
+left: 50%;
+transform: translate(-50%);
+display: none;
+  }
+
+  #restartButton{
+      margin: auto;
+  }

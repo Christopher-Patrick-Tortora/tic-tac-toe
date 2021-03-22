@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>Tic-Tac-Toe</header>
+    <form id="form">
+        <label for="playerOneForm" class="playerOne">Player 1 &#10005;</label>
+        <input type="button" class="playerOne" id="humanOne" value="Human" />
+        <input type="text" class="playerOne" id="playerOneName" />
+        <input type="button" class="playerOne" id="aiOne" value="AI" />
+        <label for="playerTwoForm" class="playerTwo">Player 2 &#9675;</label>
+        <input type="button" class="playerTwo" id="humanTwo" value="Human" />
+        <input type="text" class="playerTwo" id="playerTwoName" />
+        <input type="button" class="playerTwo" id="aiTwo" value="AI" />
+        <input type="button" id="start" value="Start"/>
+    </form>
+    <div id = "winner">
+
+    </div>
+    <div id="board">
+    </div>
+    <div id ="restart">
+        <input  id ="restartButton" type="button" value="Restart?"/>
+    </div>
+   
+</body>
+<script src="script.js"></script>
+
+</html>
